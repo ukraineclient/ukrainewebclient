@@ -41,6 +41,14 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0-beta1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0-beta1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -141,11 +149,35 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Area.cs" />
+    <Compile Include="Models\AreaShop.cs" />
+    <Compile Include="Models\AreaShopDeal.cs" />
+    <Compile Include="Models\AreaShopSession.cs" />
+    <Compile Include="Models\Basket.cs" />
+    <Compile Include="Models\BasketItem.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Deal.cs" />
+    <Compile Include="Models\DealCategory.cs" />
+    <Compile Include="Models\DealPicture.cs" />
+    <Compile Include="Models\DiscountsContext.cs" />
+    <Compile Include="Models\Mapping\AreaMap.cs" />
+    <Compile Include="Models\Mapping\AreaShopDealMap.cs" />
+    <Compile Include="Models\Mapping\AreaShopMap.cs" />
+    <Compile Include="Models\Mapping\AreaShopSessionMap.cs" />
+    <Compile Include="Models\Mapping\BasketItemMap.cs" />
+    <Compile Include="Models\Mapping\BasketMap.cs" />
+    <Compile Include="Models\Mapping\CategoryMap.cs" />
+    <Compile Include="Models\Mapping\DealCategoryMap.cs" />
+    <Compile Include="Models\Mapping\DealMap.cs" />
+    <Compile Include="Models\Mapping\DealPictureMap.cs" />
+    <Compile Include="Models\Mapping\ShopMap.cs" />
+    <Compile Include="Models\Mapping\UnitMeasureMap.cs" />
+    <Compile Include="Models\Shop.cs" />
+    <Compile Include="Models\UnitMeasure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
